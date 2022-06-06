@@ -1,0 +1,209 @@
+
+.navi{
+    width: 85%;
+    margin: auto;
+    height: 135px;
+}
+/* navi above start */
+.navi__above{
+    height: 50px;
+    display: flex;
+    align-items: center !important;
+}
+
+.navi__section{
+    /* width: 25%; */
+    height: 50px;
+    align-items: center;
+    display: flex;
+    
+}
+.navi__signIn{
+    width: 100%;
+    flex-direction: row;
+}
+.navi__subscribe{
+    width: 25%;
+}
+.nav__img{
+    display: flex;
+    flex-direction: row;
+}
+
+.navi__section__left{
+    display: flex;
+    padding-right: 10px;
+    align-items: center;
+    height: 100%;
+    border-right: 1px solid rgb(197, 197, 197);
+}
+.subscribe__text span{
+    margin-left:8px;
+}
+
+.navi__search input {
+    width: 100%;
+    height: 50px;
+    border:none;
+    outline: none;
+    color: var(--colorParagh);
+}
+
+/* headerMain start */
+.header__navi {
+width: 85%;
+margin: auto;
+}
+.headerMain {
+    background: var(--colorText);
+    color: #fff;
+    height: 475px;
+}
+.headerMain a{
+    color: #fff;
+    text-transform: uppercase;
+}
+.header__links {
+    height: 55px;
+}
+.header__links ul {
+    padding: 0;
+    height: 55px;
+    align-items: center;
+    
+}
+.header__links li{
+    overflow: hidden;
+    border-bottom: 1px solid transparent;
+    
+}
+.header__links li:hover  {
+    color: #fff;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.header__middle__side{
+    background: #30363D;
+    height: 130px;
+    padding: 25px 30px;
+    border-radius: 10px;
+}
+.middle__block{
+    width: 240px;
+    padding-right: 30px;
+}
+.middle__block:not(:last-child){
+    border-right: 1px solid rgb(145, 145, 145);
+}
+/* headerMain start */
+.header__bottom__side{
+    width: 100%;
+    height: 570px;
+    position: relative;
+}
+.bottom__img{
+    width: 73%;
+    height: 100%;
+    background: url('../images/Bg/bg1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    animation: opacity 0.5s backwards;
+}
+.i-2,.i-3,.i-4,.i-5{
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover !important;
+}
+.i-2{
+    background: url('../images/imgForTab/car.jpg');
+}
+.i-3{
+    background: url('../images/imgForTab/movie.jpg');
+}
+.i-4{
+    background: url('../images/imgForTab/nfl.jpg');
+}
+.i-5{
+    background: url('../images/imgForTab/tech.jpg');
+}
+
+.bottom__descrip{
+    width: 80%;
+    height: 210px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.bottom__author{
+    padding: 0px 40px;
+}
+.bottom__descrip p{
+    margin: 0;
+    color: #4592FF;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.bottom__descrip h4 {
+font-size: 40px;
+font-weight: bold;
+}
+.form__play i{
+    font-size: 50px;
+    color: rgb(206, 206, 206);
+}
+.form {
+    width: 480px;
+}
+.form__spans span:first-child{
+    color: rgb(206, 206, 206);
+}
+.bottom__recommend{
+    width: 28%;
+    min-height: 570px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #fff;
+    color: var(--colorText);
+    border-radius: 0 10px 10px 0;
+}
+.recommend__title{
+   height: 15%;
+}
+.recommend__title p{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.recomment__list{
+    height: 20%;
+    display: flex;
+    padding-right: 40px;
+    padding-left: 15px;
+    flex-direction: column;
+    justify-content: center;
+}
+.recomment__list:hover{
+    background: rgb(216, 216, 216);
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+.recomment__list a{
+margin-left: 8px;
+text-align: left;
+}
+.recomment__list p{
+    color: var(--colorText);
+    line-height: 18px;
+    font-size: 14px;
+}

@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="slidePanel-menu">
+            <div class="slidePanel__container">
+                <div class="slidePanel__close"><i class="fas fa-close"></i></div>
+                <ul>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Opinion</a></li>
+                    <li><a href="#">Science</a></li>
+                    <li><a href="#">Life</a></li>
+                    <li><a href="#">Travel</a></li>
+                    <li><a href="#">Moneys</a></li>
+                    <li><a href="#">Art & Design</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Health</a></li>
+                    <li><a href="#">Education</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navi">
+            <div class="navi__above d-flex justify-content-between">
+                <div class="navi__section d-flex justify-content-between">
+                    <div class="navi__section__left">
+                        <a href="#"><i class="fas fa-bars"></i></a>
+                        <a href="#">Sections</a>
+                    </div>
+                    <div class="navi__search d-flex align-items-center px-4">
+                        <i class="fas fa-search"></i>
+                        <input type="search" placeholder="Search" class="w-100">
+                    </div>
+                </div>
+
+                <div class="navi__subscribe d-flex align-items-end justify-content-between">
+
+                    <div class="navi__signIn d-flex justify-content-between align-items-center">
+                        <div class="nav__img">
+                            <img src="./images/navImg/navImg.png" alt="1">
+                            <div class="subscribe__text">
+                                <p>Subscribe now</p>
+                                <span>3 month for $19</span>
+                            </div>
+                        </div>
+
+                        <div class="subcribe__text__blog">
+                            <i class="fas fa-user"></i>
+                            <a href="#" id="signIn">Sign In</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="signIn">
+                <div class="signIn__wrapper">
+                    <h5>Sign in</h5>
+                    <div id="close">
+                        <i class="fas fa-close" id="closeModal"></i>
+                    </div>
+                    <hr>
+                    <form>
+                        <label for="#userName">User's name</label>
+                        <input type="text" id="userName" placeholder="Phone or email" required>
+                        <br>
+                        <label for="#userPassword">Password</label>
+                        <input type="password" id="userPassword" placeholder="Password" required><span><i class="fas fa-eye-slash eye" id="closeEye"></i></span><span><i class="fas fa-eye eye" id="openEye"></i></span>
+                        <div class="remember d-flex align-items-center">
+                            <label for="#rememberMe">Remember me</label>
+                            <input type="checkbox" name="Remember me" id="rememberMe">
+                        </div>
+                        <input type="submit" value="Sign-in" class="submit">
+                    </form>
+
+                    <p>If you forgot your password then click the <a href="#">Forgot password</a> or contact support team.</p>
+                </div>
+            </div>
+
+            <div class="navi__below d-flex align-items-center ">
+                <div class="below__first d-flex align-items-center col-xl-5 col-lg-5 col-md-4 col-sm-4">
+                    <a href="#"><img src="./images/navImg/statue.png" alt="statue"></a>
+                    <p>Boston and New York Bear Brunt</p>
+                </div>
+                <div class="below__center col-xl-4 col-lg-4 col-md-4 col-sm-4 align-items-end">
+                    <h1>Universal</h1>
+                </div>
+                <div class="below__last col-xl-3 col-lg-3 col-md-4 col-sm-4 d-flex align-items-center justify-content-between">
+                    <p class="date"></p>
+                    <div class="below__weather d-flex align-items-center">
+                        <i class="fas fa-sun"></i>
+                        <p>-23 C</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerMain">
+
+            <div class="header__navi ">
+                <div class="header__links">
+                    <ul class="d-flex justify-content-between flex-wrap">
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Opinion</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Life</a></li>
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Moneys</a></li>
+                        <li><a href="#">Art & Design</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Health</a></li>
+                        <li><a href="#">Education</a></li>
+                    </ul>
+                </div>
+                <div class="header__middle__side d-flex my-4 justify-content-between">
+                    <div class="middle__block d-flex align-items-center">
+                        <p>25 Songs That Tell Us Where Music Is Going</p>
+                        <img src="./images/navImg/navImg1.png" alt="1">
+                    </div>
+                    <div class="middle__block d-flex align-items-center">
+                        <p>These Ancient Assassins Eat Their Own Kind</p>
+                        <img src="./images/navImg/navImg2.png" alt="2">
+                    </div>
+                    <div class="middle__block d-flex align-items-center">
+                        <p>How Do You Teach People to Love Difficult Music?</p>
+                        <img src="./images/navImg/navImg3.png" alt="3">
+                    </div>
+                    <div class="middle__block d-flex align-items-center">
+                        <p>International Soccer's Man of Mystery</p>
+                        <img src="./images/navImg/navImg4.png" alt="4">
+                    </div>
+                </div>
+                <div class="header__bottom__side d-flex">
+                    <div class="bottom__img ">
+                        <div class="bottom__author d-flex">
+                            <img src="./images/personImg/1.png" alt="1">
+                            <div class="bottom__author__text">
+                                <p>By Benjamin Turner</p>
+                                <span>Traveler</span>
+                            </div>
+                        </div>
+                        <div class="bottom__descrip d-flex justify-content-between">
+                            <p>Destinations :</p>
+                            <h4>In Southeast England, White Cliffs and Fish</h4>
+                            <form class="d-flex align-items-center form">
+                                <button class="d-flex align-items-center justify-content-evenly">Read more <i class="fas fa-arrow-right"></i></button>
+                                <div class="form__play align-items-center mx-4 d-flex">
+                                    <i class="far fa-play-circle" id="playCircle">
+                                </i>
+                                    <div class="form__spans d-flex row">
+                                        <span>The chalk cliff of Beachy Head</span>
+                                        <span>18:06</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="bottom__img i-2">
+                        <div class="bottom__author d-flex">
+                            <img src="./images/personImg/2.png" alt="1">
+                            <div class="bottom__author__text">
+                                <p>By Alex Brendon</p>
+                                <span>Visitor</span>
+                            </div>
+                        </div>
+                        <div class="bottom__descrip d-flex justify-content-between">
+                            <p>Destinations :</p>
+                            <h4>In East England, Cars and Bikes</h4>
+                            <form class="d-flex align-items-center form">
+                                <button class="d-flex align-items-center justify-content-evenly">Read more <i class="fas fa-arrow-right"></i></button>
+                                <div class="form__play align-items-center mx-4 d-flex">
+                                    <i class="far fa-play-circle" id="playCircle">
+                                </i>
+                                    <div class="form__spans d-flex row">
+                                        <span>The Car is my life</span>
+                                        <span>17:00</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="bottom__img i-3">
+                        <div class="bottom__author d-flex">
+                            <img src="./images/personImg/3.png" alt="3">
+                            <div class="bottom__author__text">
+                                <p>By Alec Black</p>
+                                <span>Fan of deadpool</span>
+                            </div>
+                        </div>
+                        <div class="bottom__descrip d-flex justify-content-between">
+                            <p>Destinations :</p>
+                            <h4>Premiere Hall, Cinema in Uzbekistan</h4>
+                            <form class="d-flex align-items-center form">
+                                <button class="d-flex align-items-center justify-content-evenly">Read more <i class="fas fa-arrow-right"></i></button>
+                                <div class="form__play align-items-center mx-4 d-flex">
+                                    <i class="far fa-play-circle" id="playCircle">
+                                </i>
+                                    <div class="form__spans d-flex row">
+                                        <span>Deadpool</span>
+                                        <span>02:06</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="bottom__img i-4">
+                        <div class="bottom__author d-flex">
+                            <img src="./images/personImg/4.png" alt="4">
+                            <div class="bottom__author__text">
+                                <p>By Tom Hardy</p>
+                                <span>Football player</span>
+                            </div>
+                        </div>
+                        <div class="bottom__descrip d-flex justify-content-between">
+                            <p>Destinations :</p>
+                            <h4>NFL Stadium in the South Korea</h4>
+                            <form class="d-flex align-items-center form">
+                                <button class="d-flex align-items-center justify-content-evenly">Read more <i class="fas fa-arrow-right"></i></button>
+                                <div class="form__play align-items-center mx-4 d-flex">
+                                    <i class="far fa-play-circle" id="playCircle">
+                                </i>
+                                    <div class="form__spans d-flex row">
+                                        <span>The Football</span>
+                                        <span>11:06</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="bottom__img i-5">
+                        <div class="bottom__author d-flex">
+                            <img src="./images/personImg/5.png" alt="5">
+                            <div class="bottom__author__text">
+                                <p>By Gloria Turner</p>
+                                <span>Technolog</span>
+                            </div>
+                        </div>
+                        <div class="bottom__descrip d-flex justify-content-between">
+                            <p>Destinations :</p>
+                            <h4>Company of Apple in</h4>
+                            <form class="d-flex align-items-center form">
+                                <button class="d-flex align-items-center justify-content-evenly">Read more <i class="fas fa-arrow-right"></i></button>
+                                <div class="form__play align-items-center mx-4 d-flex">
+                                    <i class="far fa-play-circle" id="playCircle">
+                                </i>
+                                    <div class="form__spans d-flex row">
+                                        <span>The Horizon</span>
+                                        <span>05:16</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="bottom__recommend  d-flex">
+                        <div class="recommend__title d-flex align-items-center justify-content-center">
+                            <p>Recommended for you</p>
+                        </div>
+                        <hr>
+                        <div class="recomment__list">
+                            <a href="#" class="text-primary">Food</a>
+                            <p>For Chicken-Fried Steak, Too Much Is Just Enough <span><i class="far fa-play-circle"></i></span></p>
+                        </div>
+                        <hr>
+                        <div class="recomment__list">
+                            <a href="#" class="text-info">Cars</a>
+                            <p>Storm Has Car Dealers Doing Swift Business</p>
+                        </div>
+                        <hr>
+                        <div class="recomment__list">
+                            <a href="#" class="text-secondary">Movies</a>
+                            <p>War Is Hell? In New Military Dramas, It's One-Dimensional</p>
+                        </div>
+                        <hr>
+                        <div class="recomment__list">
+                            <a href="#" class="text-warning">NFL</a>
+                            <p>11 surprising stat rankings for active NFL players <span><i class="far fa-play-circle"></i></span></p>
+                        </div>
+                        <hr>
+                        <div class="recomment__list">
+                            <a href="#" class="text-success">Tech Reviews</a>
+                            <p>The bookcases you can buy online and assemble yourself</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section1">
+        <div class="container__middle">
+            <div class="left">
+                <div class="upside">
+                    <div class="upside__left">
+                        <div class="left__upside">
+                            <div class="left__upside__text">
+                                <span>Cars</span>
+                                <h2>The joy of replicas: A $ 5 million car for $ 50,000</h2>
+                                <p>The 31-year-old self-taught engineer and former amateur racer spends his days building artful recreations of one of most iconic sports cars</p>
+                            </div>
+                            <div class="left__upside__car">
+                                <img src="./images/img/car.png" alt="car">
+                            </div>
+                        </div>
+                        <div class="left__upside__comment">
+                            <div class="comment__person">
+                                <img src="./images/personImg/2.png" alt="2">
+                                <h2>Jessics miller:</h2>
+                            </div>
+                            <div class="comment__p">
+                                <p>Even as the ride-hailing service's future remem…</p>
+                            </div>
+                            <div class="comment__icon">
+                                <i class="fas fa-comment"></i>
+                                <span>342</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upside__right">
+                        <input type="button" value="Popular">
+                        <div class="right__bottom">
+                            <span>ART & DESIGN</span>
+                            <h2>INVISIBLE INK: THE WEIRD WORLD OF TATTOO REMOVAL – IN PICTURES</h2>
+                            <div class="right__bottom__icon">
+                                <img src="./images/personImg/2.png" alt="2">
+                                <div class="icon__text">
+                                    <p>By Sarah Jenkins</p>
+                                    <i>Sept 26</i>
+                                    <i class="fas fa-comment">16</i>
+                                    <i class="fas fa-heart">832</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="downside">
+                    <div class="downside__left">
+                        <img src="./images/img/cat.png" alt="cat">
+                        <h2>200+ Doomed Cats Saved From Euthanization</h2>
+                    </div>
+                    <div class="downside__right">
+                        <div class="right__block">
+                            <h2>Is Coffee Bad for Bones?</h2>
+                            <p>Coffee drinkers may excrete more calcium, but it doesn't appear to weaken bones</p>
+                            <span>Oct 15</span>
+                        </div>
+                        <div class="right__block">
+                            <h2>What We Manufacture</h2>
+                            <p>A global history of the factory and the modern world that all should read</p>
+                            <span>Oct 14</span>
+                        </div>
+                        <div class="right__block">
+                            <h2>It's a Stressful World</h2>
+                            <p>Can a cruise skeptic enjoy four days on the seas with his family and a bunch of princesses?</p>
+                            <span>Oct 14</span>
+                        </div>
+                        <div class="right__block">
+                            <h2>A Treat for Lemon Lovers</h2>
+                            <p>This tangerine, ginger and chocolate tart has verve, depth and a hint of spice</p>
+                            <span>Oct 13</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right__columns">
+                    <h2>Columns</h2>
+                </div>
+                <div class="right__mainside">
+                    <div class="mainside__block">
+                        <i class="fas fa-quote-left"></i>
+                        <h2>Architecture is the thoughtful making of space</h2>
+                        <div class="block__person">
+                            <img src="./images/personImg/3.png" alt="2">
+                            <div class="block__person__text">
+                                <p>David Williams</p>
+                                <span>Architect</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="mainside__block">
+                        <i class="fas fa-quote-left"></i>
+                        <h2>The details are not the details. They make the design.</h2>
+                        <div class="block__person">
+                            <img src="./images/personImg/4.png" alt="2">
+                            <div class="block__person__text">
+                                <p>Alexandra Green
+                                </p>
+                                <span>Interior designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="mainside__block">
+                        <i class="fas fa-quote-left"></i>
+                        <h2>Live life to the fullest, and focus on the positive</h2>
+                        <div class="block__person">
+                            <img src="./images/personImg/5.png" alt="2">
+                            <div class="block__person__text">
+                                <p>Olivia Thompson</p>
+                                <span>Coacher</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right__readmore">
+                    <button>Read more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="main">
+        <div class="main__text">
+            <h1>The Big Bloom or «How Flowering Plants Changed the World»</h1>
+            <button class="d-flex align-items-center justify-content-evenly mt-4">Read more <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </main>
+    <section class="section2">
+        <div class="c">
+            <div class="section2__wrapper">
+                <div class="section2__left">
+                    <div class="section2__comments2">
+                        <div class="section2__left__img">
+                            <img src="./images/img/1.png" alt="1">
+                        </div>
+                        <div class="section2__right__content">
+                            <div class="section2__upside d-flex justify-content-between ">
+                                <span>Flights</span>
+                                <i class="fas fa-bookmark"></i>
+                            </div>
+                            <h3>Passengers Suffer as Crowded Field Puts Pressure on Europe's Airlines</h3>
+                            <p class="m-0 mb-2">Weaker carriers have fallen by the wayside amid fierce competition, while others have been hit by bad luck. The result: thousands of canceled flights.</p>
+                            <div class="section2__icons d-flex justify-content-between">
+                                <i>Aug 6</i>
+                                <i class="fas fa-comment"></i><span>342</span>
+                                <i class="fas fa-heart like"></i><span class="like__spans">830</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="section2__comments2">
+                        <div class="section2__left__img">
+                            <img src="./images/img/2.png" alt="2">
+                        </div>
+                        <div class="section2__right__content">
+                            <div class="section2__upside d-flex justify-content-between ">
+                                <span>Food</span>
+                                <i class="fas fa-bookmark "></i>
+                            </div>
+                            <h3>Three Courses, 20 Euros: The Affordable Dining Renaissance in Paris</h3>
+                            <p class="m-0 mb-2">The Los Angeles area, for all of its culinary diversity, has not historically been thought of as a haven for bread lovers. The area has a reputation as a place where gluten fears to tread.</p>
+                            <div class="section2__icons d-flex justify-content-between">
+                                <i>Oct 7</i>
+                                <i class="fas fa-comment"></i><span>27</span>
+                                <i class="fas fa-heart like"></i><span class="like__spans">129</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="section2__comments2">
+                        <div class="section2__left__img">
+                            <img src="./images/img/3.png" alt="3">
+                        </div>
+                        <div class="section2__right__content">
+                            <div class="section2__upside d-flex justify-content-between ">
+                                <span>Science</span>
+                                <i class="fas fa-bookmark"></i>
+                            </div>
+                            <h3>Watch the High-Flying Physics of a Plant's Exploding Fruits</h3>
+                            <p class="m-0 mb-2">Three undergradute physics majors and their professor worked out how the hairyflower wild petunia shoots tiny seeds more than 20 feet through the air</p>
+                            <div class="section2__icons d-flex justify-content-between">
+                                <i>Oct 11</i>
+                                <i class="fas fa-comment"></i><span>30</span>
+                                <i class="fas fa-heart like"></i><span class="like__spans">284</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="section2__comments2">
+                        <div class="section2__left__img">
+                            <img src="./images/img/4.png" alt="4">
+                        </div>
+                        <div class="section2__right__content">
+                            <div class="section2__upside d-flex justify-content-between ">
+                                <span>Health</span>
+                                <i class="fas fa-bookmark"></i>
+                            </div>
+                            <h3>How the Shape of Your Ears Affects What You Hear</h3>
+                            <p class="m-0 mb-2">We're able to locate sound because our brains grasp the shape of our ears. When that shape changes, we need time and practice to adapt. Ears are a peculiarly individual piece of anatomy.</p>
+                            <div class="section2__icons d-flex justify-content-between">
+                                <i>Oct 19</i>
+                                <i class="fas fa-comment"></i><span>102</span>
+                                <i class="fas fa-heart like"></i><span class="like__spans">1293</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="section2__comments2">
+                        <div class="section2__left__img">
+                            <img src="./images/img/5.png" alt="5">
+                        </div>
+                        <div class="section2__right__content">
+                            <div class="section2__upside d-flex justify-content-between ">
+                                <span>Science</span>
+                                <i class="fas fa-bookmark"></i>
+                            </div>
+                            <h3>Forests Protect the Climate. A Future With More Storms Would Mean Trouble.</h3>
+                            <p class="m-0 mb-2">With an increase in extreme weather expected in the years to come, forests could be changed permanently as the world continues to warm</p>
+                            <div class="section2__icons d-flex justify-content-between">
+                                <i>Oct 22</i>
+                                <i class="fas fa-comment"></i><span>5</span>
+                                <i class="fas fa-heart like"></i><span class="like__spans">82</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="section2__comments2">
+                        <div class="section2__left__img">
+                            <img src="./images/img/6.png" alt="6">
+                        </div>
+                        <div class="section2__right__content">
+                            <div class="section2__upside d-flex justify-content-between ">
+                                <span>Art & Design</span>
+                                <i class="fas fa-bookmark"></i>
+                            </div>
+                            <h3>New Contemporary Institute Reverberates in Richmond's Historic Landscape</h3>
+                            <p class="m-0 mb-2">The center, which will open in April, takes a bold look at race and other social issues that still resonate in the region as well as the nation. A new Institute for Contemporary Art is set to open.</p>
+                            <div class="section2__icons d-flex justify-content-between">
+                                <i>Oct 26</i>
+                                <i class="fas fa-comment"></i><span>101</span>
+                                <i class="fas fa-heart like"></i><span class="like__spans">432</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="section2__right d-flex align-items-between">
+                    <div class="section2__right__recommend">
+                        <h2>Recommended for you</h2>
+                    </div>
+                    <div class="section2__right__content__aside">
+                        <div class="section2__right__content__blog d-flex">
+                            <div class="section2__blog__left">
+                                <img src="./images/smallImg/1.png" alt="1">
+                            </div>
+                            <div class="section2__right__content__right">
+                                <p>Office Meetings Leave the Office</p>
+                                <span>15 minuts ago</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="section2__right__content__blog d-flex">
+                            <div class="section2__blog__left">
+                                <img src="./images/smallImg/2.png" alt="2">
+                            </div>
+                            <div class="section2__right__content__right">
+                                <p>Experimental Vocal Music in Brooklyn</p>
+                                <span>32 minuts ago</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="section2__right__content__blog d-flex">
+                            <div class="section2__blog__left">
+                                <img src="./images/smallImg/3.png" alt="3">
+                            </div>
+                            <div class="section2__right__content__right">
+                                <p>Google's Influence Over Think Tanks</p>
+                                <span>38 minuts ago</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="section2__right__content__blog d-flex">
+                            <div class="section2__blog__left">
+                                <img src="./images/smallImg/4.png" alt="4">
+                            </div>
+                            <div class="section2__right__content__right">
+                                <p>Homes for Sale in NYC and Connecticut</p>
+                                <span>53 minuts ago</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="section2__right__content__blog d-flex">
+                            <div class="section2__blog__left">
+                                <img src="./images/smallImg/5.png" alt="5">
+                            </div>
+                            <div class="section2__right__content__right">
+                                <p>Are You There, Dad? It's Me, Alice</p>
+                                <span>1 hour ago</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="section2__right__content__blog d-flex">
+                            <div class="section2__blog__left">
+                                <img src="./images/smallImg/6.png" alt="6">
+                            </div>
+                            <div class="section2__right__content__right">
+                                <p>The New Punk Look: Lacy and Colorful</p>
+                                <span>1 hour ago</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="section2__right__content__blog d-flex">
+                            <div class="section2__blog__left">
+                                <img src="./images/smallImg/7.png" alt="7">
+                            </div>
+                            <div class="section2__right__content__right">
+                                <p>Sunday Best in Harlem and Brooklyn</p>
+                                <span>2 hour ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section2__right__input">
+                        <input type="button" value="Read more">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="pre-footer">
+        <div class="pre-footer__blog">
+            <div class="blog__left">
+                <div class="slides">
+                    <div class="slides__img">
+                        <img src="./images/Bg/bg4.png" alt="1">
+                    </div>
+                    <div class="slides__content">
+                        <div class="content__person">
+                            <img src="./images/personImg/6.png" alt="6">
+                            <p>By Sarah Jenkins</p>
+                            <span>Photographer</span>
+                        </div>
+                        <h2>Readers' Choice winners: Your wine country favorites</h2>
+                        <button><i class="fa-solid fa-images"></i> Watch photos 26</button>
+                    </div>
+                </div>
+                <div class="slides">
+                    <div class="slides__img">
+                        <img src="./images/Bg/bg1.jpg" alt="2">
+                    </div>
+                    <div class="slides__content">
+                        <div class="content__person">
+                            <img src="./images/personImg/2.png" alt="6">
+                            <p>By Michael Jenkins</p>
+                            <span>CEO</span>
+                        </div>
+                        <h2>Readers' Choice winners: Your wine country favorites</h2>
+                        <button><i class="fa-solid fa-images"></i> Watch photos 25</button>
+                    </div>
+                </div>
+                <div class="slides">
+                    <div class="slides__img">
+                        <img src="./images/Bg/bg2.png" alt="3">
+                    </div>
+                    <div class="slides__content">
+                        <div class="content__person">
+                            <img src="./images/personImg/3.png" alt="6">
+                            <p>By Jackson Bricks</p>
+                            <span>Developer</span>
+                        </div>
+                        <h2>Readers' Choice winners: Your wine country favorites</h2>
+                        <button><i class="fa-solid fa-images"></i> Watch photos 24</button>
+                    </div>
+                </div>
+                <div class="slides">
+                    <div class="slides__img">
+                        <img src="./images/Bg/bg3.png" alt="4">
+                    </div>
+                    <div class="slides__content">
+                        <div class="content__person">
+                            <img src="./images/personImg/4.png" alt="6">
+                            <p>By Stuard Little</p>
+                            <span>Manager</span>
+                        </div>
+                        <h2>Readers' Choice winners: Your wine country favorites</h2>
+                        <button><i class="fa-solid fa-images"></i> Watch photos 23</button>
+                    </div>
+                </div>
+                <div class="content__dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="blog__right">
+                <div class="blog__upside">
+                    <div class="card__girl__wrap d-flex justify-content-evenly">
+                        <div class="wrap__text ">
+                            <span class="m-0">Careers</span>
+                            <h2>Had a Job Interview but No Callback? Here's What to Do</h2>
+                            <p>Try to understand the culture of the company where you want to work and be authentic in your interview, experts emphasize</p>
+                            <button class="d-flex align-items-center justify-content-evenly mt-4">Read more <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                        <div class="wrapper__girl">
+                            <img src="./images/img/girl.png" alt="girl" class="girl__img">
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__downside">
+                    <div class="blog__comments">
+                        <div class="downside__block ">
+                            <h2>Is Coffee Bad for Bones?</h2>
+                            <p>Coffee drinkers may excrete more calcium, but it doesn't appear to weaken bones</p>
+                            <span>Oct 15</span>
+                        </div>
+                    </div>
+                    <div class="blog__comments">
+                        <div class="downside__block ">
+                            <h2>What We Manufacture</h2>
+                            <p>A global history of the factory and the modern world that all should read</p>
+                            <span>Oct 14</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__subs">
+            <h1>Subscribe now and get 20% off</h1>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </form>
+        </div>
+        <div class="footer__links mb-5">
+            <div class="links__address">
+                <table>
+                    <tr>
+                        <th>News</th>
+                        <th>Arts</th>
+                        <th>Travel</th>
+                        <th>Sports</th>
+                        <th>Tech</th>
+                        <th>Moneys</th>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Nation</a></td>
+                        <td><a href="#">Art & Design</a></td>
+                        <td><a href="#">Destination</a></td>
+                        <td><a href="#">Olympics</a></td>
+                        <td><a href="#">Tech</a></td>
+                        <td><a href="#">Markets</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">World</a></td>
+                        <td><a href="#">Movies</a></td>
+                        <td><a href="#">Flights</a></td>
+                        <td><a href="#">MotorSports</a></td>
+                        <td><a href="#">Tech Columnists</a></td>
+                        <td><a href="#">Business</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Politics</a></td>
+                        <td><a href="#">People</a></td>
+                        <td><a href="#">Business Travel</a></td>
+                        <td><a href="#">Volleyball</a></td>
+                        <td><a href="#">Tech Reviews</a></td>
+                        <td><a href="#">Personal Finance</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Solar Eclipse</a></td>
+                        <td><a href="#">Video: Arts</a></td>
+                        <td>
+                            <a href="#"></a>
+                        </td>
+                        <td><a href="#">MMA</a></td>
+                        <td><a href="#">Talking Tech</a></td>
+                        <td><a href="#">Retirement</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#"></a>
+                        </td>
+                        <td><a href="#">Theater</a></td>
+                        <td>
+                            <a href="#"></a>
+                        </td>
+                        <td><a href="#">Cycling</a></td>
+                        <td>
+                            <a href="#"></a>
+                        </td>
+                        <td><a href="#">Careers</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <div class="footer__contact d-flex justify-content-between py-4">
+            <div class="contact__left d-flex justify-content-between align-items-center">
+                <img src="./images/Symbol.png" alt="symbol">
+                <a href="#">Contact Us</a>
+                <a href="#">Work with Us</a>
+                <a href="#">Advertise</a>
+                <a href="#">Your Ad Choise</a>
+            </div>
+            <div class="contact__right d-flex align-items-center">
+                <div class="contact__icons d-flex justify-content-between">
+                    <a href="https:/facebook.com"><img src="./logos/facebookIcon.png" alt="logo"></a>
+                    <a href="https:/twitter.com"><img src="./logos/twiter.png" alt="logo"></a>
+                    <a href="https:/youtube.com"><img src="./logos/youtube.png" alt="logo"></a>
+                    <a href="https:/instagram.com"><img src="./logos/instagramm.png" alt="logo"></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer__end d-flex justify-content-between align-items-center">
+            <p>Universal's business concept is to offer fashion and quality at the best price in a sustainable way. Universal has since it was founded in 2015 grown into one of the world's leading fashion companies. </p>
+            <p>© 2019 Universal UI Kit</p>
+        </div>
+    </footer>
+    <script src="./js/bundle.js"></script>
+</body>
+
+</html>
